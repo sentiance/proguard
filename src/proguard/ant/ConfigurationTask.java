@@ -43,47 +43,50 @@ public class ConfigurationTask extends Task
     public void appendTo(Configuration configuration)
     {
         // Append all of these configuration entries to the given configuration.
-        configuration.programJars               = extendClassPath(configuration.programJars,
-                                                                  this.configuration.programJars);
+        configuration.programJars                       = extendClassPath(configuration.programJars,
+                                                                          this.configuration.programJars);
 
-        configuration.libraryJars               = extendClassPath(configuration.libraryJars,
-                                                                  this.configuration.libraryJars);
+        configuration.libraryJars                       = extendClassPath(configuration.libraryJars,
+                                                                          this.configuration.libraryJars);
 
-        configuration.keep                      = extendClassSpecifications(configuration.keep,
-                                                                            this.configuration.keep);
+        configuration.keep                              = extendClassSpecifications(configuration.keep,
+                                                                                    this.configuration.keep);
 
-        configuration.keepDirectories           = extendList(configuration.keepDirectories,
-                                                             this.configuration.keepDirectories);
+        configuration.keepDirectories                   = extendList(configuration.keepDirectories,
+                                                                     this.configuration.keepDirectories);
 
-        configuration.whyAreYouKeeping          = extendClassSpecifications(configuration.whyAreYouKeeping,
-                                                                            this.configuration.whyAreYouKeeping);
+        configuration.whyAreYouKeeping                  = extendClassSpecifications(configuration.whyAreYouKeeping,
+                                                                                    this.configuration.whyAreYouKeeping);
 
-        configuration.optimizations             = extendClassSpecifications(configuration.optimizations,
-                                                                            this.configuration.optimizations);
+        configuration.optimizations                     = extendClassSpecifications(configuration.optimizations,
+                                                                                    this.configuration.optimizations);
 
-        configuration.assumeNoSideEffects       = extendClassSpecifications(configuration.assumeNoSideEffects,
-                                                                            this.configuration.assumeNoSideEffects);
+        configuration.assumeNoSideEffects               = extendClassSpecifications(configuration.assumeNoSideEffects,
+                                                                                    this.configuration.assumeNoSideEffects);
 
-        configuration.keepPackageNames          = extendList(configuration.keepPackageNames,
-                                                             this.configuration.keepPackageNames);
+        configuration.keepPackageNames                  = extendList(configuration.keepPackageNames,
+                                                                     this.configuration.keepPackageNames);
 
-        configuration.keepAttributes            = extendList(configuration.keepAttributes,
-                                                             this.configuration.keepAttributes);
+        configuration.keepAttributes                    = extendList(configuration.keepAttributes,
+                                                                     this.configuration.keepAttributes);
 
-        configuration.adaptClassStrings         = extendList(configuration.adaptClassStrings,
-                                                             this.configuration.adaptClassStrings);
+        configuration.keepOriginalSourceFileAttribute   = extendList(configuration.keepOriginalSourceFileAttribute,
+                                                                     this.configuration.keepAttributes);
 
-        configuration.adaptResourceFileNames    = extendList(configuration.adaptResourceFileNames,
-                                                             this.configuration.adaptResourceFileNames);
+        configuration.adaptClassStrings                 = extendList(configuration.adaptClassStrings,
+                                                                     this.configuration.adaptClassStrings);
 
-        configuration.adaptResourceFileContents = extendList(configuration.adaptResourceFileContents,
-                                                             this.configuration.adaptResourceFileContents);
+        configuration.adaptResourceFileNames            = extendList(configuration.adaptResourceFileNames,
+                                                                     this.configuration.adaptResourceFileNames);
 
-        configuration.note                      = extendList(configuration.note,
-                                                             this.configuration.note);
+        configuration.adaptResourceFileContents         = extendList(configuration.adaptResourceFileContents,
+                                                                     this.configuration.adaptResourceFileContents);
 
-        configuration.warn                      = extendList(configuration.warn,
-                                                             this.configuration.warn);
+        configuration.note                              = extendList(configuration.note,
+                                                                     this.configuration.note);
+
+        configuration.warn                              = extendList(configuration.warn,
+                                                                     this.configuration.warn);
     }
 
 
@@ -242,6 +245,12 @@ public class ConfigurationTask extends Task
     public void addConfiguredKeepattribute(FilterElement filterElement)
     {
         configuration.keepAttributes = extendFilter(configuration.keepAttributes,
+                                                    filterElement);
+    }
+
+    public void addConfiguredKeeporiginalsourcefileattributes(FilterElement filterElement)
+    {
+        configuration.keepOriginalSourceFileAttribute = extendFilter(configuration.keepOriginalSourceFileAttribute,
                                                     filterElement);
     }
 

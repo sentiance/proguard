@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts_anttask.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts_anttask.iml" group="buildscripts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts_gradletask.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts_gradletask.iml" group="buildscripts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts_main.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts_main.iml" group="buildscripts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts_proguard.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts_proguard.iml" group="buildscripts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts_proguardgui.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts_proguardgui.iml" group="buildscripts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts_retrace.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts_retrace.iml" group="buildscripts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildscripts_test.iml" filepath="$PROJECT_DIR$/.idea/modules/buildscripts_test.iml" group="buildscripts" />
+    </modules>
+  </component>
+</project>

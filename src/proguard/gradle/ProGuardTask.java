@@ -840,6 +840,20 @@ public class ProGuardTask extends DefaultTask
     }
 
     // Hack: support the keyword without parentheses in Groovy.
+    public Object getkeeporiginalsourcefileattribute() {
+        keeporiginalsourcefileattribute();
+        return null;
+    }
+
+    public void keeporiginalsourcefileattribute() {
+        keeporiginalsourcefileattribute(null);
+    }
+
+    public void keeporiginalsourcefileattribute(String s) {
+        System.err.println(">>>> " + s);
+    }
+
+    // Hack: support the keyword without parentheses in Groovy.
     public Object getadaptclassstrings()
     {
         adaptclassstrings();

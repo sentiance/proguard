@@ -77,6 +77,7 @@ class ConfigurationConstants
     public static final String KEEP_ATTRIBUTES_OPTION                 = "-keepattributes";
     public static final String KEEP_PARAMETER_NAMES_OPTION            = "-keepparameternames";
     public static final String RENAME_SOURCE_FILE_ATTRIBUTE_OPTION    = "-renamesourcefileattribute";
+    public static final String KEEP_ORIGINAL_SOURCE_FILE_ATTRIBUTE_OPTION = "-keeporiginalsourcefileattribute";
     public static final String ADAPT_CLASS_STRINGS_OPTION             = "-adaptclassstrings";
     public static final String ADAPT_RESOURCE_FILE_NAMES_OPTION       = "-adaptresourcefilenames";
     public static final String ADAPT_RESOURCE_FILE_CONTENTS_OPTION    = "-adaptresourcefilecontents";

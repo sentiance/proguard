@@ -39,7 +39,7 @@ import java.io.*;
  */
 public class ProGuard
 {
-    public static final String VERSION = "ProGuard, version 5.3 beta1";
+    public static final String VERSION = "ProGuard, version 5.3 beta2";
 
     private final Configuration configuration;
     private       ClassPool     programClassPool = new ClassPool();
@@ -343,7 +343,7 @@ public class ProGuard
             {
                 System.out.println("Applying mapping [" + fileName(configuration.applyMapping) + "]");
             }
-            
+
             if (configuration.renamePackages.size() > 0)
             {
                 System.out.println("Package renaming [" + configuration.renamePackages + "]");

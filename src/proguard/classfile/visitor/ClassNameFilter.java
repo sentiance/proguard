@@ -63,7 +63,7 @@ public class ClassNameFilter implements ClassVisitor
     public ClassNameFilter(List         regularExpression,
                            ClassVisitor classVisitor)
     {
-        this(new ListParser(new ClassNameParser()).parse(regularExpression),
+            this(new ListParser(new ClassNameParser()).parse(regularExpression),
              classVisitor);
     }
 
