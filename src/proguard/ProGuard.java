@@ -344,7 +344,7 @@ public class ProGuard
                 System.out.println("Applying mapping [" + fileName(configuration.applyMapping) + "]");
             }
 
-            if (configuration.renamePackages.size() > 0)
+            if (configuration.renamePackages != null && configuration.renamePackages.size() > 0)
             {
                 System.out.println("Package renaming [" + configuration.renamePackages + "]");
             }
